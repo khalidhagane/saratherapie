@@ -54,13 +54,13 @@
         /* Main heading color */
         --heading-color: #112015;
         /* Primary color for the site, often used for buttons, links, etc. */
-        --color-main:  rgba(199, 21, 133, 0.6);;
+        --color-main:  rgba(199, 21, 133, 0.8);
         /* Darker shade of the primary color, used for hover states or dark background elements */
-        --color-darker: #1D4026;
+        --color-darker: #9B0F5E;
         /* Lighter shade of the primary color, for lighter elements or backgrounds */
-        --color-lighter: #99c7a3;
+        --color-lighter:#E082C7;
         /* Subtle background color, used for subtle backgrounds or areas with less emphasis */
-        --color-subtle: #FFFBE9;
+        --color-subtle: #FFE0F2;
         /* Border color, used for borders and dividers */
         --color-border: #fdfdfd;
         /* Error color, usually red, used for form validation or error messages */
@@ -316,13 +316,16 @@
     }
 
     .btn-light:hover {
-        background-color: white;
+        background-color: #9c1d74;
         color: var(--text-color-1);
+        
     }
 
     .btn-dark:hover {
-        background-color: var(--color-darker);
-        color: white;
+        /* background-color: var(--color-darker); */
+        background-color: #9c1d74;
+        /* color: white; */
+        color: var(--text-color-1);
     }
 
         /* Navbar Styles */
@@ -400,7 +403,7 @@
     font-size: 15px;
 }
 .nav-link:hover {
-    color: white; 
+    color: #9c1d74; 
 }
 .dropdown {
     border-radius: 10px;
@@ -436,6 +439,7 @@
 /* Hero Style */
 .content-m {
     margin-top: 6rem;
+    width:101% ;
 }
 .section-m {
     margin-top: 9rem; 
@@ -469,24 +473,25 @@
     border-bottom: 1px solid #c4c4c4;
 }
 .form-container {
-    background-color: rgba(199, 21, 133, 0.6);
+    /* background-color: rgba(199, 21, 133, 0.6); */
     border-radius: 10px;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 1220px;
     width: 100%;
     border: 1px solid white;
 }
 .form-control, .form-control:focus, .form-control::placeholder{
-    background-color: rgba(199, 21, 133, 0.6);
-    color: white;
+    background-color: #e6e3e5;
+    color: rgb(0, 0, 0);
     box-shadow: none;
     outline: none;
-    border-color: white;
+    border-color: #C2188B;
     font-family: 'Philosopher';
     padding: 10px;
+    width: 160px;
 }
 .form-control:focus {
-    background-color: white;
+    /* background-color: #c2188c60; */
     color: black;
 }
 .date {
@@ -496,7 +501,7 @@
 
 /* About Style */
 .about-bg {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/about-overlay.jpg');
+    background-image: linear-gradient(rgba(52, 1, 68, 0.6), rgba(52, 1, 68, 0.6)), url('../img/about-overlay.jpg');
     background-size: cover;
     background-position: center;
     height: 512px;
@@ -522,7 +527,7 @@
 
 /* CEO Quote Style */
 .bg-ceo {
-    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(17, 32, 21, 0.6)), url('../img/images-ZV8482W.jpg'); 
+    background-image: linear-gradient(rgba(17, 32, 21, 0.6), rgba(52, 1, 68, 0.6)), url('../img/images-ZV8482W.jpg'); 
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -571,7 +576,8 @@
 
 
 /* Services Style */
-.bg-service-1 {
+
+/* .bg-service-1 {
     background-image: url('../img/service-1.jpg');
     min-height: 455px;
     background-size: cover;
@@ -609,7 +615,93 @@
     position: absolute;
     left: 5%;
     bottom: 10%;
+} */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
+
+@media (min-width: 992px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr; /* 2 cards per row in desktop */
+  }
+
+}
+.form-control, .form-control:focus, .form-control::placeholder{
+ 
+    width: 100%;
+}
+.c-btn{
+    width: 100%;
+}
+.service-card {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 455px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bg-service-1 {
+  background-image: url('../img/service-1.jpg');
+}
+.bg-service-2 {
+  background-image: url('../img/service-2.jpg');
+}
+.bg-service-3 {
+  background-image: url('../img/service-3.jpg');
+}
+.bg-service-4 {
+  background-image: url('../img/service-4.jpg');
+}
+
+.custom-card {
+  max-width: 80%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+.price {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.btn-dark {
+  background-color: #C2188B;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #9c1d74;
+}
+
 
 
 /* Showcase Style */
@@ -1161,6 +1253,7 @@
     }
 }
 @media screen and (max-width: 450px) {
+  
     h1 {
         font-size: 40px;
         font-family: var(--font-1);
@@ -1308,3 +1401,8 @@
         color: var(--color-main) !important;
     }
 }
+
+/* start reservation  */
+
+/* end reservation  */
+

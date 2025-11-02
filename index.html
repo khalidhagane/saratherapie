@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Wivana</title>
+    <title>Home - Saratherapie</title>
     <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
     <link href="lib/css/bootstrap.min.css" rel="stylesheet" />
     <link href="lib/css/fontawesome.css" rel="stylesheet" />
@@ -102,7 +102,10 @@
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                   </li>
-                  <li class="nav-item dropdown">
+                   <li class="nav-item">
+                  <a class="nav-link " href="form-reservation.html">Reservation</a>
+                </li>
+                  <!-- <li class="nav-item dropdown">
                     <button
                       class="nav-link"
                       id="serviceDropdown"
@@ -120,7 +123,7 @@
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="services-detail.html"
+                        <a class="dropdown-item" href="form-reservation.html"
                           >Service Detail</a
                         >
                       </li>
@@ -175,7 +178,7 @@
                         >
                       </li>
                     </ul>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -252,59 +255,68 @@
             </div>
           </div>
           <div class="d-block d-lg-flex gap-5 content-m">
-            <div class="form-container fade-in">
-              <form
-                action="#"
-                class="d-block d-lg-flex gap-4 align-items-center justify-content-between"
-              >
-                <div class="mb-3">
-                  <label for="name" class="c-white philosopher fs-14"
-                    >YOUR NAME</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="phone" class="c-white philosopher fs-14"
-                    >YOUR NUMBER</label
-                  >
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phone"
-                    placeholder="Your Number"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="date" class="c-white philosopher fs-14"
-                    >Date</label
-                  >
-                  <input
-                    type="date"
-                    class="form-control date"
-                    id="date"
-                    required
-                  />
-                </div>
-                <div>
-                  <button class="btn-light mt-3">Book Now</button>
-                </div>
-              </form>
-            </div>
-            <div
-              class="d-flex align-items-end c-text lato gap-3 mt-3 mt-lg-0 fade-in"
-            >
-              <div>Relaxation</div>
-              <div>Meditation</div>
-              <div>Ayurvedic</div>
-            </div>
-          </div>
+  <div class="form-container fade-in">
+    <form
+      action="#"
+      class="d-block d-lg-flex gap-4 align-items-center justify-content-between"
+    >
+      <div class="mb-3">
+        <label for="name" class="c-white philosopher fs-14">YOUR NAME</label>
+        <input
+          type="text"
+          class="form-control custom-input"
+          id="name"
+          placeholder="Your Name"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="c-white philosopher fs-14">YOUR NUMBER</label>
+        <input
+          type="tel"
+          class="form-control custom-input"
+          id="phone"
+          placeholder="Your Number"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="date" class="c-white philosopher fs-14">DATE</label>
+        <input
+          type="date"
+          class="form-control custom-input"
+          id="date"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="service" class="c-white philosopher fs-14">SERVICE</label>
+        <select id="service" class="form-control custom-input" required>
+          <option value="" disabled selected>Select Service</option>
+          <option value="hijama">Hijama</option>
+          <option value="massage">Massage</option>
+          <option value="tarwid">Tarwid</option>
+        </select>
+      </div>
+
+      <div>
+        <button class="btn-light mt-3 custom-btn c-btn">Book Now</button>
+      </div>
+    </form>
+  </div>
+
+  <div
+    class="d-flex align-items-end c-text lato gap-3 mt-3 mt-lg-0 fade-in"
+  >
+    <div>Relaxation</div>
+    <div>Meditation</div>
+    <div>Ayurvedic</div>
+  </div>
+</div>
+
         </section>
         <!-- Hero Section End -->
       </div>
@@ -685,103 +697,149 @@
             life
           </div>
         </div>
-        <div>
-          <div class="bg-service-1 mb-4 fade-in">
-            <div class="custom-card">
-              <div class="card-body bg-semi-white">
-                <div>
-                  <p class="text-subtitle c-semi-black">Abhyanga Massage</p>
-                  <p class="text-grey">
-                    A full-body Ayurvedic oil massage designed to promote
-                    relaxation, and detoxification
-                  </p>
-                </div>
-                <div
-                  class="d-flex justify-content-between align-items-start border-top pt-3"
-                >
-                  <div class="lato c-semi-black fs-18">$125/session</div>
-                  <div>
-                    <a href="services-detail.html" class="btn-dark">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              </div>
+        <section class="services-section">
+  <div class="services-grid">
+    <div class="service-card bg-service-1">
+      <div class="custom-card">
+        <div class="card-body bg-semi-white">
+          <div>
+            <p class="text-subtitle c-semi-black">Abhyanga Massage</p>
+            <p class="text-grey">
+              A full-body Ayurvedic oil massage designed to promote relaxation, and detoxification
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="price">$125/session</div>
+            <a href="form-reservation.html" class="btn-dark">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card bg-service-2">
+      <div class="custom-card">
+        <div class="card-body bg-semi-white">
+          <div>
+            <p class="text-subtitle c-semi-black">Phancakarma Detox</p>
+            <p class="text-grey">
+              A comprehensive detoxification program that includes therapeutic treatments and herbal
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="price">$125/session</div>
+            <a href="form-reservation.html" class="btn-dark">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card bg-service-3">
+      <div class="custom-card">
+        <div class="card-body bg-semi-white">
+          <div>
+            <p class="text-subtitle c-semi-black">Shirodhara Therapy</p>
+            <p class="text-grey">
+              A calming treatment where warm herbal oil is poured gently onto the forehead
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="price">$125/session</div>
+            <a href="form-reservation.html" class="btn-dark">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card bg-service-4">
+      <div class="custom-card">
+        <div class="card-body bg-semi-white">
+          <div>
+            <p class="text-subtitle c-semi-black">Ayurvedic Facial</p>
+            <p class="text-grey">
+              A nourishing facial using natural herbs and oils tailored to your skin type, and skin health
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="price">$125/session</div>
+            <a href="form-reservation.html" class="btn-dark">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+    </div>
+    <!-- Our Service End -->
+      <!-- Wellness Showcase Start -->
+    <div class="bg-subtle w-100">
+      <div class="width-base pt-3">
+        <div class="fade-in">
+          <div class="d-flex flex-column align-items-center">
+            <div>
+              <span class="icon-circle-17-main"
+                ><i class="fa-solid fa-plus c-main"></i
+              ></span>
+              <span class="ms-2 philosopher fs-14 c-main"
+                >WELLNESS SHOWCASE</span
+              >
+            </div>
+            <div class="title-about c-semi-black">Our Spa Experience</div>
+            <div class="subtext-showcase">
+              Discover the essence of Wivana Spa, where every image tells a
+              story of healing and rejuvenation
             </div>
           </div>
-          <div class="bg-service-2 mb-4 fade-in">
-            <div class="custom-card">
-              <div class="card-body bg-semi-white">
-                <div>
-                  <p class="text-subtitle c-semi-black">Phancakarma Detox</p>
-                  <p class="text-grey">
-                    A comprehensive detoxification program that includes
-                    therapeutic treatments and herbal
-                  </p>
-                </div>
-                <div
-                  class="d-flex justify-content-between align-items-start border-top pt-3"
-                >
-                  <div class="lato c-semi-black fs-18">$125/session</div>
-                  <div>
-                    <a href="services-detail.html" class="btn-dark">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
+        </div>
+        <div class="container mt-5 px-0">
+          <div class="row row-cols-1 row-cols-sm-3 g-3 fade-in">
+            <div class="col d-flex flex-column gap-3 px-3">
+              <div>
+                <img
+                  src="img/showcase-1.jpg"
+                  alt="showcase"
+                  class="img-showcase"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/showcase-2.jpg"
+                  alt="showcase"
+                  class="img-showcase"
+                />
               </div>
             </div>
-          </div>
-          <div class="bg-service-3 mb-4 fade-in">
-            <div class="custom-card">
-              <div class="card-body bg-semi-white">
-                <div>
-                  <p class="text-subtitle c-semi-black">Shirodhara Therapy</p>
-                  <p class="text-grey">
-                    A calming treatment where warm herbal oil is poured gently
-                    onto the forehead
-                  </p>
-                </div>
-                <div
-                  class="d-flex justify-content-between align-items-start border-top pt-3"
-                >
-                  <div class="lato c-semi-black fs-18">$125/session</div>
-                  <div>
-                    <a href="services-detail.html" class="btn-dark">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
+            <div class="col d-flex flex-column gap-3 px-3">
+              <div>
+                <img
+                  src="img/showcase-3.jpg"
+                  alt="showcase"
+                  class="img-showcase"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/showcase-4.jpg"
+                  alt="showcase"
+                  class="img-showcase"
+                />
               </div>
             </div>
-          </div>
-          <div class="bg-service-4 mb-4 fade-in">
-            <div class="custom-card">
-              <div class="card-body bg-semi-white">
-                <div>
-                  <p class="text-subtitle c-semi-black">Ayurvdeic Facial</p>
-                  <p class="text-grey">
-                    A nourishing facial using natural herbs and oils tailored to
-                    your skin type, and skin health
-                  </p>
-                </div>
-                <div
-                  class="d-flex justify-content-between align-items-start border-top pt-3"
-                >
-                  <div class="lato c-semi-black fs-18">$125/session</div>
-                  <div>
-                    <a href="services-detail.html" class="btn-dark">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
+            <div class="col px-3">
+              <div>
+                <img
+                  src="img/showcase-5.jpg"
+                  alt="showcase"
+                  class="last-img-showcase"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Our Service End -->
+    <!-- Wellness Showcase End -->
     <!-- Testimonial Start -->
     <div class="bg-subtle w-100">
       <div class="width-base pt-0">
@@ -798,11 +856,11 @@
               </div>
               <div class="title-about c-semi-black">What Our Customer Say</div>
             </div>
-            <div class="d-flex justify-content-end align-items-end">
+            <!-- <div class="d-flex justify-content-end align-items-end">
               <a href="testimonials.html" class="btn-dark mt-3">
                 More Testimonial
               </a>
-            </div>
+            </div> -->
           </div>
           <div>
             <div class="row row-cols-1 row-cols-sm-2 g-3">
@@ -979,74 +1037,7 @@
       </div>
     </div>
     <!-- Testimonial End -->
-    <!-- Wellness Showcase Start -->
-    <div class="bg-subtle w-100">
-      <div class="width-base pt-3">
-        <div class="fade-in">
-          <div class="d-flex flex-column align-items-center">
-            <div>
-              <span class="icon-circle-17-main"
-                ><i class="fa-solid fa-plus c-main"></i
-              ></span>
-              <span class="ms-2 philosopher fs-14 c-main"
-                >WELLNESS SHOWCASE</span
-              >
-            </div>
-            <div class="title-about c-semi-black">Our Spa Experience</div>
-            <div class="subtext-showcase">
-              Discover the essence of Wivana Spa, where every image tells a
-              story of healing and rejuvenation
-            </div>
-          </div>
-        </div>
-        <div class="container mt-5 px-0">
-          <div class="row row-cols-1 row-cols-sm-3 g-3 fade-in">
-            <div class="col d-flex flex-column gap-3 px-3">
-              <div>
-                <img
-                  src="img/showcase-1.jpg"
-                  alt="showcase"
-                  class="img-showcase"
-                />
-              </div>
-              <div>
-                <img
-                  src="img/showcase-2.jpg"
-                  alt="showcase"
-                  class="img-showcase"
-                />
-              </div>
-            </div>
-            <div class="col d-flex flex-column gap-3 px-3">
-              <div>
-                <img
-                  src="img/showcase-3.jpg"
-                  alt="showcase"
-                  class="img-showcase"
-                />
-              </div>
-              <div>
-                <img
-                  src="img/showcase-4.jpg"
-                  alt="showcase"
-                  class="img-showcase"
-                />
-              </div>
-            </div>
-            <div class="col px-3">
-              <div>
-                <img
-                  src="img/showcase-5.jpg"
-                  alt="showcase"
-                  class="last-img-showcase"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Wellness Showcase End -->
+   
     <!-- FAQS Start -->
     <div class="bg-semi-white w-100">
       <div class="width-base">
@@ -1257,9 +1248,9 @@
                 Latest Articles From Wivana
               </div>
             </div>
-            <div class="d-flex justify-content-end align-items-end">
+            <!-- <div class="d-flex justify-content-end align-items-end">
               <a href="blog-post.html" class="btn-dark mt-3"> More Articles </a>
-            </div>
+            </div> -->
           </div>
           <div class="row row-cols-1 row-cols-lg-3 g-3">
             <div class="col fade-in">
@@ -1554,10 +1545,10 @@
     </div>
     <!-- Footer End -->
       <!-- OUR PRICING TABLE SECTION START  -->
-            <div class="section-full bg-gray bg-repeat p-t100 p-b70" style="background-image:url(images/background/bg-6.html);">
+            <!-- <div class="section-full bg-gray bg-repeat p-t100 p-b70" style="background-image:url(images/background/bg-6.html);">
             		<div class="container">
                     
-                        <!-- TITLE START-->
+                      
                         <div class="section-head text-center">
                             <h1><span class="site-text-primary">Our</span> Pricing</h1>
                             <div class="wt-separator-outer ">
@@ -1569,7 +1560,7 @@
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                         </div>
-                        <!-- TITLE END-->
+                       
                      
                         <div class="section-content">
                             <div class="pricingtable-row">
@@ -1679,7 +1670,7 @@
                         </div>
                     
                     </div>
-            </div>
+            </div> -->
             <!-- OUR PRICING TABLEL SECTION END  --> 
     <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="lib/js/bootstrap.bundle.min.js"></script>
     <script src="lib/js/swiper-bundle.min.js"></script>

@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Saratherapie</title>
+    <title>Contact Us - Wivana</title>
     <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
     <link href="lib/css/bootstrap.min.css" rel="stylesheet" />
     <link href="lib/css/fontawesome.css" rel="stylesheet" />
@@ -96,10 +96,10 @@
                   <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="contact.html">Contact</a>
+                  <a class="nav-link " href="contact.html">Contact</a>
                 </li>
-                 <li class="nav-item">
-                  <a class="nav-link" href="form-reservation.html">Reservation</a>
+                <li class="nav-item">
+                  <a class="nav-link active" href="form-reservation.html">Reservation</a>
                 </li>
                 <!-- <li class="nav-item dropdown">
                   <button
@@ -174,7 +174,7 @@
           </div>
 
           <div class="d-none d-lg-flex">
-            <a href="contact.html" class="btn-light"> Make Appointment </a>
+            <a href="form-reservation.html" class="btn-light"> Make Appointment </a>
           </div>
         </div>
       </nav>
@@ -187,7 +187,7 @@
         >
           <div>
             <h1 class="philosopher banner-title c-white text-center">
-              Contact
+              Reservation
             </h1>
             <div
               class="d-flex gap-3 philosopher fs-14 c-silver align-items-center justify-content-center large-padding mt-4"
@@ -197,14 +197,14 @@
                 class="fa-solid fa-arrow-right-long"
                 style="color: #c7c7c7"
               ></i>
-              <div>CONTACT</div>
+              <div>RESERVATION</div>
             </div>
           </div>
         </div>
       </div>
       <!-- Banner End -->
     </div>
-    <!-- Contact Us Start -->
+    <!-- Reservation Start -->
     <div class="bg-subtle">
       <div class="width-base">
         <div class="container fade-in">
@@ -215,83 +215,81 @@
                   <span class="icon-circle-17"
                     ><i class="fa-solid fa-plus"></i
                   ></span>
-                  <span class="ms-2 philosopher fs-14 c-white">CONTACT US</span>
+                  <span class="ms-2 philosopher fs-14 c-white">RESERVATION</span>
                 </div>
                 <div class="title-about mt-1 mb-4 c-white">
                   Get in Touch With Wivana
                 </div>
                 <p class="text-silver">
-                  Contact us today to start your journey towards holistic
+                  Reservation today to start your journey towards holistic
                   wellness. We’re here to assist with any inquiries or bookings
                 </p>
               </div>
-              <form
+           <form
                 class="bg-semi-white p-3 p-lg-4 mt-5 form"
                 action="#"
                 method="post"
                 id="contactForm"
-              >
+                >
                 <div class="popup-message" id="popupMessageContact">
-                  <div>
+                    <div>
                     <i class="fa-solid fa-check fa-2xl"></i>
-                  </div>
-                  Thank you! The form submitted successfully
+                    </div>
+                    Thank you! The form submitted successfully
                 </div>
+
                 <div class="form-row">
-                  <div class="form-field">
+                    <div class="form-field full-width">
                     <input
-                      type="text"
-                      id="firstname"
-                      class="form-input"
-                      placeholder="first name"
-                      required
+                        type="text"
+                        id="name"
+                        class="form-input"
+                        placeholder="Your name"
+                        required
                     />
-                  </div>
-                  <div class="form-field">
-                    <input
-                      type="text"
-                      id="lastname"
-                      class="form-input"
-                      placeholder="last name"
-                      required
-                    />
-                  </div>
+                    </div>
                 </div>
+
                 <div class="form-row">
-                  <div class="form-field">
+                    <div class="form-field full-width">
                     <input
-                      type="email"
-                      id="email"
-                      class="form-input"
-                      placeholder="your email"
-                      required
+                        type="number"
+                        id="phone"
+                        class="form-input"
+                        placeholder="Phone number"
+                        required
                     />
-                  </div>
-                  <div class="form-field">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field full-width">
+                    <select id="service" class="form-input" required>
+                        <option value="" disabled selected>Select service</option>
+                        <option value="hijama">Hijama</option>
+                        <option value="massage">Massage</option>
+                        <option value="tarwid">Tarwid</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field full-width">
                     <input
-                      type="number"
-                      id="phone"
-                      class="form-input"
-                      placeholder="phone number"
-                      required
+                        type="date"
+                        id="date"
+                        class="form-input"
+                        required
                     />
-                  </div>
+                    </div>
                 </div>
-                <div class="form-row full-width">
-                  <div class="form-field">
-                    <textarea
-                      id="message"
-                      class="form-textarea"
-                      rows="4"
-                      placeholder="message"
-                      required
-                    ></textarea>
-                  </div>
-                </div>
+
                 <div class="form-row full-width mt-3">
-                  <button type="submit" class="form-button">Submit Now</button>
+                    <button type="submit" class="form-button">Submit Now</button>
                 </div>
-              </form>
+                </form>
+
+
             </div>
             <div class="col px-0 position-relative">
               <img
@@ -322,7 +320,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-5 fade-in">
+        <!-- <div class="mt-5 fade-in">
           <iframe
             loading="lazy"
             class="maps overflow-hidden"
@@ -330,10 +328,10 @@
             title="US"
             aria-label="US"
           ></iframe>
-        </div>
+        </div> -->
       </div>
     </div>
-    <!-- Contact Us End -->
+    <!-- Reservation End -->
     <!-- Video Start -->
     <!-- <div class="bg-darker">
       <div class="width-base">
