@@ -616,52 +616,100 @@
     left: 5%;
     bottom: 10%;
 } */
+ .bg-service-1 {
+  background-image: url('../img/service-1.jpg');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-service-1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.bg-service-2 { background-image: url('../img/service-1.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+.bg-service-3 { background-image: url('../img/service-1.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-service-4 { background-image: url('../img/service-1.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-service-5 { background-image: url('../img/service-1.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-service-6 { background-image: url('../img/service-1.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-service-7 { background-image: url('../img/service-1.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}.bg-service-8 { background-image: url('../img/service-1.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}.bg-service-9 { background-image: url('../img/service-1.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}.bg-service-10 { background-image: url('../img/service-1.jpg'); 
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .services-grid {
-    grid-template-columns: 1fr 1fr; /* 2 cards per row in desktop */
+    grid-template-columns: repeat(2, 1fr); 
   }
+}
 
+@media (min-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  }
 }
 .form-control, .form-control:focus, .form-control::placeholder{
  
     width: 100%;
 }
 .c-btn{
-    width: 100%;
+    width: 100%3;
 }
 .service-card {
   position: relative;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
-  min-height: 455px;
-  border-radius: 10px;
+  
+  min-height: 236px;
+  border-radius: 10px 10px;
   overflow: hidden;
 }
 
-.bg-service-1 {
-  background-image: url('../img/service-1.jpg');
-}
-.bg-service-2 {
-  background-image: url('../img/service-2.jpg');
-}
-.bg-service-3 {
-  background-image: url('../img/service-3.jpg');
-}
-.bg-service-4 {
-  background-image: url('../img/service-4.jpg');
-}
+
+
 
 .custom-card {
-  max-width: 80%;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
+  max-width: 100%;
+  /* background: rgba(255, 255, 255, 0.95); */
+  border-radius: 10px 10px;
   position: absolute;
   left: 5%;
   bottom: 10%;
@@ -686,6 +734,8 @@
   font-size: 18px;
   color: #333;
   font-weight: 600;
+  padding: 5px;
+  border-radius: 50px 50px 50px 50px;
 }
 
 .btn-dark {
@@ -1114,7 +1164,7 @@
     margin: 10px 0; 
 }
 .footer-logo {
-    width: 224px;
+    width: 285px;
     height: 56px;
     object-fit: cover;
 }
@@ -1334,10 +1384,10 @@
         height: 15px;
     }
     .bg-service-1 {
-        background-image: none;
+        /* background-image: none; */
         min-height: 10px;
     }
-    .bg-service-2 {
+    /* .bg-service-2 {
         background-image: none;
         min-height: 10px;
     }
@@ -1349,6 +1399,22 @@
         background-image: none;
         min-height: 10px;
     }
+    .bg-service-5 {
+        background-image: none;
+        min-height: 10px;
+    }
+    .bg-service-6 {
+        background-image: none;
+        min-height: 10px;
+    }
+    .bg-service-7 {
+        background-image: none;
+        min-height: 10px;
+    }
+    .bg-service-8 {
+         background-image: none; 
+        min-height: 10px;
+    } */
     .custom-card {
         max-width: 100%;
         position: static;
