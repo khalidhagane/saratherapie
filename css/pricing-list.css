@@ -1,0 +1,160 @@
+/* Pricing List CSS */
+.pricing-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.pricing-columns {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.pricing-column {
+  flex: 1;
+  background: linear-gradient(135deg, #ffffff 0%, #fff5fb 100%);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(194, 24, 139, 0.1);
+  border: 2px solid #FFE0F2;
+}
+
+/* Individual Pricing Item */
+.pricing-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(194, 24, 139, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease backwards;
+}
+
+.pricing-item:nth-child(1) { animation-delay: 0.1s; }
+.pricing-item:nth-child(2) { animation-delay: 0.2s; }
+.pricing-item:nth-child(3) { animation-delay: 0.3s; }
+.pricing-item:nth-child(4) { animation-delay: 0.4s; }
+.pricing-item:nth-child(5) { animation-delay: 0.5s; }
+.pricing-item:nth-child(6) { animation-delay: 0.6s; }
+.pricing-item:nth-child(7) { animation-delay: 0.7s; }
+.pricing-item:nth-child(8) { animation-delay: 0.8s; }
+.pricing-item:nth-child(9) { animation-delay: 0.9s; }
+.pricing-item:nth-child(10) { animation-delay: 1.0s; }
+
+.pricing-item:last-child {
+  border-bottom: none;
+}
+
+.pricing-item:hover {
+  padding-left: 10px;
+  background: rgba(194, 24, 139, 0.03);
+  border-radius: 10px;
+}
+
+/* Service Name */
+.pricing-name {
+  font-family: 'Philosopher', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2d2d2d;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Dotted Line Separator */
+.pricing-dots {
+  flex-grow: 1;
+  height: 1px;
+  margin: 0 20px;
+  background-image: linear-gradient(
+    to right,
+    #C2188B 0%,
+    #C2188B 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: 12px 1px;
+  background-repeat: repeat-x;
+  opacity: 0.4;
+  position: relative;
+  top: -3px;
+}
+
+/* Price */
+.pricing-price {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #C2188B;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #C2188B 0%, #9B0F5E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-list-container {
+    padding: 40px 15px;
+  }
+  
+  .pricing-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .pricing-column {
+    padding: 30px 20px;
+  }
+  
+  .pricing-item {
+    padding: 15px 0;
+  }
+  
+  .pricing-name {
+    font-size: 18px;
+  }
+  
+  .pricing-dots {
+    margin: 0 12px;
+    background-size: 10px 1px;
+  }
+  
+  .pricing-price {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-column {
+    padding: 25px 15px;
+  }
+  
+  .pricing-name {
+    font-size: 16px;
+  }
+  
+  .pricing-dots {
+    margin: 0 10px;
+    background-size: 8px 1px;
+  }
+  
+  .pricing-price {
+    font-size: 15px;
+  }
+}
